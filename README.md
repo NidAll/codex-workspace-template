@@ -9,10 +9,10 @@ The default structure has one main orchestrator and three specialized roles:
 
 ```mermaid
 flowchart TD
-    Main[Main: plan, integrate, verify]
-    Main --> Explorer[Explorer: read-only source tracing]
-    Main --> Researcher[Researcher: read-only official research]
-    Main --> Worker[Worker: scoped implementation and checks]
+    Main["Main: plan, integrate, verify<br/>Model: gpt-6.1-sol<br/>Effort: xhigh"]
+    Main --> Explorer["Explorer: read-only source tracing<br/>Model: gpt-6-luna<br/>Effort: high"]
+    Main --> Researcher["Researcher: read-only official research<br/>Model: gpt-6-luna<br/>Effort: high"]
+    Main --> Worker["Worker: scoped implementation and checks<br/>Model: gpt-6-luna<br/>Effort: max"]
     Explorer --> Main
     Researcher --> Main
     Worker --> Main
