@@ -1,0 +1,25 @@
+# Local task/context and runtime state
+/.codex/tasks/
+/.codex/logs/
+/.codex/sessions/
+/.codex/auth.json
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.log
+
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+
+# Python validation artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Generated distribution files belong outside the source repository
+*.zip
+*.tar.gz
