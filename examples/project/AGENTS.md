@@ -4,6 +4,8 @@ Copy this guide into an owning project and replace placeholders with real local
 contracts. In this example the [workspace guide](../../AGENTS.md) is two levels
 up; adjust that relative link after copying. An independent Git root may not load
 outer instructions, so read the workspace guide explicitly if it should apply.
+Every new project needs this concise, versionable guide and Git coverage before
+implementation; use the workspace's new-project baseline when setting it up.
 
 ## Project map
 

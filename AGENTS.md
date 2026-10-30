@@ -16,6 +16,11 @@ point the index at its source areas instead of inventing nested projects.
 
 ## Shared rules
 
+- Before implementing a new project, ensure it is Git-managed and has a concise
+  project-specific `AGENTS.md`. Initialize an independent repository when needed;
+  reuse the owning Git root for monorepo components. Verify the guide can be versioned
+  and add the project to the workspace index. Keep root guides as navigation plus
+  shared rules, with commands/contracts local and history/task state elsewhere.
 - Confirm the working directory, owning repository and Git status. Preserve
   unrelated local edits; make the smallest complete change in the owning layer.
 - Inspect current source and transient state before relying on notes. Use targeted

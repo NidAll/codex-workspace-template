@@ -15,6 +15,22 @@ and directory; a link in an index is a route to read, not automatic file loading
 Do not read all sibling project guides at task startup. Project-specific exceptions
 stay with their owning guide; shared policies should have one maintained source.
 
+## New project baseline
+
+Before implementation, confirm the new project's owning directory and Git root.
+For an independent project, reuse its clone or initialize a repository if absent.
+A component in a monorepo uses the existing repository unless a separate repository
+is explicitly intended. Add a suitable `.gitignore` for its generated/private data.
+Local Git setup does not imply permission to publish or create a remote.
+
+Create a concise, versionable project `AGENTS.md` with its real source ownership,
+setup/check commands and essential contracts. Add a route from the workspace root
+index. Verify the Git root and that the guide is not accidentally ignored before
+reporting project setup complete. Preserve existing repositories and unrelated edits.
+
+Keep root guides as an index plus shared rules. Link to detailed project guidance;
+do not accumulate task transcripts, logs, history or inventories in `AGENTS.md`.
+
 ## Delegation
 
 Main owns planning, architecture, decomposition, integration, review and final

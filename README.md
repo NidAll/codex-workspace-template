@@ -38,7 +38,8 @@ For an existing project, review and merge its instructions/configuration instead
 of overwriting them. Keep linked documentation paths valid when copying files.
 Do not copy private global Codex configuration, authentication or session data.
 
-1. Adapt the project index in [AGENTS.md](AGENTS.md).
+1. Ensure each new project is Git-managed, has a concise project-specific
+   `AGENTS.md`, and is listed in the workspace index. Adapt [AGENTS.md](AGENTS.md).
 2. Give each owning project a guide based on [the project example](examples/project/AGENTS.md).
 3. Review [the config](.codex/config.toml) and the three role TOMLs for account/client compatibility.
 4. Keep task notes local, then run the validation commands below.
